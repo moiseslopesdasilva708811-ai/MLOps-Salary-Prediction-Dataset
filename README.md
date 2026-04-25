@@ -19,6 +19,14 @@ Para atender às exigências da disciplina de **Tópicos Avançados em IA (UFRN)
 
 A organização das pastas segue boas práticas de reprodutibilidade e organização de código:
 
+<div align="center">
+  <h2>🚀 Projeto Monitorado via Weights & Biases</h2>
+  <a href="https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction">
+    <img src="https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white" alt="Weights & Biases Badge">
+  </a>
+  <p><i>Clique no selo acima para acessar o Dashboard completo com métricas e artefatos.</i></p>
+</div>
+
 ```text
 MLOps-Salary-Prediction-Dataset/
 ├── data/          # Datasets (raw e clean)
@@ -29,5 +37,3 @@ MLOps-Salary-Prediction-Dataset/
 ├── requirements.txt
 └── README.md
 
-## Projeto Salvo no W & B
-[![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
