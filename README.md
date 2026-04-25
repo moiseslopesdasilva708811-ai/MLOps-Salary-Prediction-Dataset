@@ -4,7 +4,7 @@ Este repositório contém o desenvolvimento de uma rede neural **Multilayer Perc
 
 ---
 
-## 🛠 Metodologia Aplicada
+## Metodologia Aplicada
 
 Para atender às exigências da disciplina de **Tópicos Avançados em IA (UFRN)**, o projeto seguiu estas etapas fundamentais:
 
@@ -14,7 +14,18 @@ Para atender às exigências da disciplina de **Tópicos Avançados em IA (UFRN)
 * **Monitoramento e MLOps:** Versionamento de artefatos, logs de métricas por época e armazenamento de hiperparâmetros via **Weights & Biases (W&B)**.
 
 ---
+<h1>Tecnologias Utilizadas</h1>
+<div align="center">
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white)
+
+</div>
+
+---
 ## 🗂 Estrutura do Projeto
 
 A organização das pastas segue boas práticas de reprodutibilidade e organização de código:
