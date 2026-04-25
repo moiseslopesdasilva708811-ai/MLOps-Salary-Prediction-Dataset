@@ -40,11 +40,9 @@ A organização das pastas segue boas práticas de reprodutibilidade e organiza�
 
 ```text
 MLOps-Salary-Prediction-Dataset/
-├── data/          # Datasets (raw e clean)
+├── data/          # Dataset utilizado
 ├── notebooks/     # Análise exploratória e prototipagem
 ├── src/           # Scripts Python e pipeline de treino
-├── models/        # Artefatos do modelo (.pt)
-├── reports/       # Relatório técnico (PDF) e gráficos
+├── mlp_salary_model.pkl  # Artefato final do modelo treinado
 ├── requirements.txt
 └── README.md
-
