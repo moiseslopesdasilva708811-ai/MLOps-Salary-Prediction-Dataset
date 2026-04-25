@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "CPython 3.13.5",
+  "startedAt":  "2026-04-25T15:21:43.964164Z",
+  "program":  "c:\\Users\\josem\\OneDrive\\Documentos\\MLOPs_Salary_Prediction\\Tratamento_e_limpeza_dados.ipynb",
+  "codePath":  "c:\\Users\\josem\\OneDrive\\Documentos\\MLOPs_Salary_Prediction\\Tratamento_e_limpeza_dados.ipynb",
+  "codePathLocal":  "Tratamento_e_limpeza_dados.ipynb",
+  "git":  {
+    "remote":  "https://github.com/moiseslopesdasilva708811-ai/MLOps-Salary-Prediction-Dataset.git",
+    "commit":  "9670bb99f2644d163f89edeced1d9e64dd7a23da"
+  },
+  "email":  "moiseslopesdasilva708811@gmail.com",
+  "root":  "c:\\Users\\josem\\OneDrive\\Documentos\\MLOPs_Salary_Prediction",
+  "host":  "Engenheiro",
+  "executable":  "c:\\Users\\josem\\OneDrive\\Documentos\\MLOPs_Salary_Prediction\\.venv\\Scripts\\python.exe",
+  "cpu_count":  2,
+  "cpu_count_logical":  4,
+  "disk":  {
+    "/":  {
+      "total":  "249063010304",
+      "used":  "122069221376"
+    }
+  },
+  "memory":  {
+    "total":  "4080263168"
+  },
+  "writerId":  "noc1u2ebnbwgbsp3c9mwzzd1w1gzxg9k"
+}
