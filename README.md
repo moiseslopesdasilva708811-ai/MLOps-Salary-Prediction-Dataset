@@ -1,117 +1,23 @@
-# 💼 MLOps Salary Prediction
+##Pipeline MLOps: Classificação de Renda (Adult Census)
 
-Projeto de Machine Learning com foco em **predição salarial** utilizando dados demográficos e profissionais, aplicando técnicas de análise exploratória, tratamento de dados e preparação para modelos de classificação.
+- Este repositório contém o desenvolvimento de uma rede neural Multilayer Perceptron (MLP) para classificar se um indivíduo recebe mais de 50k anuais. O foco aqui não é apenas o modelo, mas a implementação de um ciclo de vida sustentável via MLOps.
 
----
+#🛠 O que foi feito (Metodologia)
 
-## 📊 Sobre o Projeto
+Para atender às exigências da disciplina de Tópicos Avançados em IA, o projeto seguiu estas etapas:
 
-Este projeto tem como objetivo prever se um indivíduo possui renda **acima ou abaixo de 50K**, com base em características como:
+-Saneamento de Dados: Limpeza de ruídos (como os valores "?" do dataset original) e tratamento de outliers via IQR.
+-Seleção de Variáveis: Não confiei em apenas um método. Cruzei Correlação, Random Forest e Mutual Information para definir o que realmente importa para a rede neural.Arquitetura da MLP: Implementação de uma rede profunda com justificativa técnica de cada hiperparâmetro (camadas, neurônios e funções de ativação)
+-Monitoramento: Todo o treinamento foi logado no Weights & Biases (W&B), permitindo versionar cada "run" e os pesos do modelo
 
-* Idade
-* Escolaridade
-* Ocupação
-* Horas trabalhadas por semana
-* Estado civil, entre outros
+##Conjunto de pastas
+├── data/       # Dataset bruto e versão limpa
+├── notebooks/  # EDA e prototipagem do saneamento
+├── src/        # Pipeline de treino e integração com W&B
+├── models/     # Pesos salvos (artefatos)
+├── reports/    # Relatório técnico em PDF e gráficos
+└── requirements.txt
 
-A base utilizada contém **32.561 registros e 15 variáveis**, permitindo uma análise robusta dos fatores que influenciam a renda.
-
----
-
-## 🧠 Objetivos
-
-* Realizar análise exploratória de dados (EDA)
-* Identificar padrões e correlações
-* Tratar dados inconsistentes e valores ausentes
-* Preparar o dataset para modelagem
-* Aplicar boas práticas de organização em projetos de Machine Learning (MLOps)
-
----
-
-## 🗂 Estrutura do Projeto
-
-```
-MLOps-Salary-Prediction-Dataset/
-│
-├── data/
-│   └── salary.csv
-│
-├── notebooks/
-│   └── Tratamento_e_limpeza_dados.ipynb
-│
-├── src/
-│   └── download_dataset.py
-│
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🔍 Análise de Dados
-
-Durante a análise inicial, foram identificados pontos importantes:
-
-* Idade média de aproximadamente 38 anos
-* Jornada média de trabalho de 40h semanais
-* Variáveis como `capital-gain` altamente desbalanceadas
-* Forte relação entre escolaridade e renda
-
----
-
-## ⚙️ Tecnologias Utilizadas
-
-* Python
-* Pandas
-* Matplotlib
-* Jupyter Notebook
-
----
-
-## 🚀 Como Executar
-
-1. Clone o repositório:
-
-```
-git clone https://github.com/seu-usuario/MLOps-Salary-Prediction-Dataset.git
-```
-
-2. Acesse a pasta do projeto:
-
-```
-cd MLOps-Salary-Prediction-Dataset
-```
-
-3. Instale as dependências:
-
-```
-pip install -r requirements.txt
-```
-
-4. Execute o notebook:
-
-```
-jupyter notebook
-```
-
----
-
-## 📈 Próximos Passos
-
-* Aplicação de modelos de Machine Learning (Random Forest, Logistic Regression)
-* Avaliação de desempenho
-* Deploy do modelo
-* Pipeline automatizado (MLOps)
-
----
-
-## 👨‍💻 Autor
-
-José Moisés Lopes da Silva
-Estudante de Engenharia | Desenvolvedor | Interesse em Machine Learning e Sistemas Inteligentes
-
----
-
-## 📌 Observações
-
-Este projeto faz parte de estudos acadêmicos e desenvolvimento pessoal na área de Ciência de Dados e MLOps.
+🚀 Como rodarInstale as dependências:Bashpip install -r requirements.txt
+Para rodar o pipeline completo e logar no W&B:Bashpython src/mlops_pipeline.py
+📊 Resultados PrincipaisAs métricas finais (Acurácia, Precisão, Recall e F1-Score) e a matriz de confusão detalhada podem ser consultadas no Relatório Técnico dentro da pasta /reports.
