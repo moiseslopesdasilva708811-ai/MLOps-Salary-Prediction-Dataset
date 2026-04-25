@@ -28,3 +28,6 @@ MLOps-Salary-Prediction-Dataset/
 ├── reports/       # Relatório técnico (PDF) e gráficos
 ├── requirements.txt
 └── README.md
+
+## Projeto Salvo no W & B
+[![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
