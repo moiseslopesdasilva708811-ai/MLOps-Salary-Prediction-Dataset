@@ -11,12 +11,20 @@ Para atender às exigências da disciplina de Tópicos Avançados em IA, o proje
 -Monitoramento: Todo o treinamento foi logado no Weights & Biases (W&B), permitindo versionar cada "run" e os pesos do modelo
 
 ##Conjunto de pastas
-├── data/       # Dataset bruto e versão limpa
-├── notebooks/  # EDA e prototipagem do saneamento
-├── src/        # Pipeline de treino e integração com W&B
-├── models/     # Pesos salvos (artefatos)
-├── reports/    # Relatório técnico em PDF e gráficos
-└── requirements.txt
+🗂 Estrutura do Projeto
+MLOps-Salary-Prediction-Dataset/
+│
+├── data/
+│   └── salary.csv
+│
+├── notebooks/
+│   └── Tratamento_e_limpeza_dados.ipynb
+│
+├── src/
+│   └── download_dataset.py
+│
+├── requirements.txt
+└── README.md
 
 🚀 Como rodarInstale as dependências:Bashpip install -r requirements.txt
 Para rodar o pipeline completo e logar no W&B:Bashpython src/mlops_pipeline.py
