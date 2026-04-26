@@ -1,0 +1,51 @@
+2026-04-26 08:20:37,979 INFO    MainThread:11168 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-04-26 08:20:37,984 INFO    MainThread:11168 [wandb_setup.py:_flush():81] Configure stats pid to 11168
+2026-04-26 08:20:37,984 INFO    MainThread:11168 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-26 08:20:37,985 INFO    MainThread:11168 [wandb_init.py:setup_run_log_directory():723] Logging user logs to c:\Users\josem\OneDrive\Documentos\MLOPs_Salary_Prediction\notebooks\wandb\run-20260426_082037-556qk8yy\logs\debug.log
+2026-04-26 08:20:37,985 INFO    MainThread:11168 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to c:\Users\josem\OneDrive\Documentos\MLOPs_Salary_Prediction\notebooks\wandb\run-20260426_082037-556qk8yy\logs\debug-internal.log
+2026-04-26 08:20:37,987 INFO    MainThread:11168 [wandb_init.py:monkeypatch_ipython():642] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000002115D671A90>
+2026-04-26 08:20:37,989 INFO    MainThread:11168 [wandb_init.py:init():850] calling init triggers
+2026-04-26 08:20:37,990 INFO    MainThread:11168 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'architecture': 'MLP', 'dataset': 'Adult Income', 'test_size': 0.2, 'random_state': 42, '_wandb': {}}
+2026-04-26 08:20:37,990 INFO    MainThread:11168 [wandb_init.py:init():898] starting backend
+2026-04-26 08:20:41,472 INFO    MainThread:11168 [wandb_init.py:init():913] sending inform_init request
+2026-04-26 08:20:46,121 INFO    MainThread:11168 [wandb_init.py:init():918] backend started and connected
+2026-04-26 08:20:46,326 INFO    MainThread:11168 [wandb_run.py:_label_probe_notebook():1345] probe notebook
+2026-04-26 08:20:46,359 INFO    MainThread:11168 [wandb_run.py:_label_probe_notebook():1355] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 252043: character maps to <undefined>
+2026-04-26 08:20:46,363 INFO    MainThread:11168 [wandb_init.py:init():988] updated telemetry
+2026-04-26 08:20:47,621 INFO    MainThread:11168 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-04-26 08:20:48,106 INFO    MainThread:11168 [wandb_init.py:init():1056] starting run threads in backend
+2026-04-26 08:20:48,937 INFO    MainThread:11168 [wandb_run.py:_console_start():2554] atexit reg
+2026-04-26 08:20:48,938 INFO    MainThread:11168 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-04-26 08:20:48,938 INFO    MainThread:11168 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-04-26 08:20:48,940 INFO    MainThread:11168 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-04-26 08:20:48,968 INFO    MainThread:11168 [wandb_init.py:init():1094] run started, returning control to user process
+2026-04-26 08:20:48,980 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:20:57,510 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:20:57,510 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:21:02,416 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:29:47,195 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:29:47,205 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:29:53,909 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:30:49,221 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:30:49,221 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:30:53,784 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:32:03,195 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:32:03,196 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:32:06,053 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:33:27,165 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:33:27,176 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:33:32,860 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:34:29,007 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:34:29,007 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:34:34,259 INFO    MainThread:11168 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-04-26 08:35:42,461 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-26 08:35:42,476 INFO    MainThread:11168 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-04-26 08:35:45,579 INFO    MainThread:11168 [wandb_run.py:_finish():2321] finishing run moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction/556qk8yy
+2026-04-26 08:35:54,784 INFO    MainThread:11168 [jupyter.py:save_history():435] not saving jupyter history
+2026-04-26 08:35:54,784 INFO    MainThread:11168 [jupyter.py:save_ipynb():362] not saving jupyter notebook
+2026-04-26 08:35:54,785 INFO    MainThread:11168 [wandb_init.py:_jupyter_teardown():627] cleaning up jupyter logic
+2026-04-26 08:35:54,785 INFO    MainThread:11168 [wandb_run.py:_atexit_cleanup():2520] got exitcode: 0
+2026-04-26 08:35:54,787 INFO    MainThread:11168 [wandb_run.py:_restore():2502] restore
+2026-04-26 08:35:54,787 INFO    MainThread:11168 [wandb_run.py:_restore():2508] restore done
+2026-04-26 08:35:56,340 INFO    MainThread:11168 [wandb_run.py:_footer_sync_info():3889] logging synced files
