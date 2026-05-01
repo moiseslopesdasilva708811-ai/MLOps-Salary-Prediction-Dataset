@@ -1,6 +1,6 @@
 # Model Multilayer Perceptron Salary Prediction Classification
 
-This repository presents a complete **Machine Learning + MLOps** solution for income classification using the **Adult Census Income Dataset**.
+This repository presents a complete **Machine Learning + MLOps** solution for income classification using the **Salary Prediction Classification of Adult Census Income Dataset**.
 
 The main objective of this project is to predict whether an individual's annual income exceeds **$50K/year** using a **Multilayer Perceptron (MLP)** neural network architecture.
 
