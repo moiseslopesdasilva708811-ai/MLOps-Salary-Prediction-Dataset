@@ -8,3 +8,5 @@ wandb
 jupyter
 statsmodels
 pytest
+scipy
+kagglehub
