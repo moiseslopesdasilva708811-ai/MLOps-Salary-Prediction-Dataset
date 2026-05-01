@@ -81,8 +81,6 @@ Normalization
         ↓
 Neural Network Training
         ↓
-Evaluation
-        ↓
 W&B Monitoring
         ↓
 Model Versioning
