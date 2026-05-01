@@ -1,35 +1,383 @@
-# Pipeline MLOps: Classificação de Renda (Adult Census)
+# Model Multilayer Perceptron Salary Prediction Classification
 
-Este repositório contém o desenvolvimento de uma rede neural **Multilayer Perceptron (MLP)** para classificar se um indivíduo recebe mais de 50k anuais. O foco do projeto é a implementação de um ciclo de vida sustentável e rastreável utilizando práticas de **MLOps**.
+This repository presents a complete **Machine Learning + MLOps** solution for income classification using the **Salary Prediction Classification of Adult Census Income Dataset**.
+
+The main objective of this project is to predict whether an individual's annual income exceeds **$50K/year** using a **Multilayer Perceptron (MLP)** neural network architecture.
+
+Beyond model training, this project also emphasizes:
+
+- Data Engineering
+- Statistical Data Cleaning
+- Intelligent Feature Selection
+- Experiment Tracking
+- Model Versioning
+- Cloud Monitoring with Weights & Biases
 
 ---
 
 <div align="center">
-  <h1>Tecnologias Utilizadas</h1>
-  
-  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-  ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-  ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-  ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-  ![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white)
 
-  <br>
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=black)
 
-  ## 🚀 Projeto Monitorado via Weights & Biases
-  
-  [![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
-  
-  *Clique no selo acima para acessar o Dashboard completo.*
+<br>
+
+### 🚀 Experiments Dashboard (W&B)
+
+[![W&B Dashboard](https://img.shields.io/badge/W&B-Open_Dashboard-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
+
+*Track loss curves, accuracy, feature importance and experiment metrics in real time.*
+
 </div>
 
 ---
 
-## Estrutura da pasta
+# 📌 Project Objective
+
+This project was developed to apply modern concepts of:
+
+- Data Science
+- Machine Learning
+- Deep Learning
+- MLOps Engineering
+
+The goal is to build a reproducible, scalable and production-oriented Machine Learning pipeline.
+
+---
+
+# 🧠 Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| Pandas | Data manipulation |
+| NumPy | Numerical operations |
+| Scikit-Learn | Preprocessing and evaluation |
+| PyTorch | Neural network implementation |
+| Weights & Biases | Experiment tracking |
+| Matplotlib | Data visualization |
+| Jupyter Notebook | Prototyping and development |
+
+---
+
+# 🏗️ Pipeline Architecture
+
+```text
+Data Collection
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Statistical Analysis
+        ↓
+Feature Selection
+        ↓
+Normalization
+        ↓
+Neural Network Training
+        ↓
+Evaluation
+        ↓
+W&B Monitoring
+        ↓
+Model Versioning
+```
+
+---
+
+# 📂 Project Structure
+
 ```text
 MLOps-Salary-Prediction-Dataset/
-├── data/          # Dataset utilizado
-├── notebooks/     # Análise exploratória e prototipagem
-├── src/           # Scripts Python e pipeline de treino
-├── mlp_salary_model.pkl  # Artefato final do modelo treinado
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   └── Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
+│
+├── src/
+│   ├── data/
+│   │   └── preprocessing.py
+│   │
+│   ├── models/
+│   │   └── train.py
+│   │
+│   └── utils/
+│       └── helpers.py
+│
+├── artifacts/
+│   └── mlp_salary_model.pkl
+│
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🔬 Pipeline Stages
+
+## 📥 1. Data Collection
+
+The project uses the **Adult Census Income Dataset**, containing information such as:
+
+- Age
+- Education
+- Marital Status
+- Occupation
+- Work Hours
+- Relationship
+- Native Country
+- Capital Gain/Loss
+
+---
+
+# 🧹 2. Data Cleaning & Preprocessing
+
+Several preprocessing techniques were applied:
+
+## ✔ Duplicate Removal
+
+Avoids statistical bias caused by repeated samples.
+
+## ✔ Missing Values Treatment
+
+Using:
+
+- Median imputation for numerical variables
+- Robust strategies for categorical data
+
+## ✔ Outlier Treatment
+
+Using the **IQR (Interquartile Range)** method.
+
+---
+
+# 📊 3. Feature Selection
+
+The project applies multiple feature selection strategies:
+
+- Variance Inflation Factor (VIF)
+- Spearman Correlation
+- Mutual Information
+
+Main goals:
+
+- Reduce computational cost
+- Minimize noise
+- Reduce multicollinearity
+- Improve model generalization
+
+---
+
+# 🧠 4. Neural Network Architecture
+
+The neural network was implemented using **PyTorch**.
+
+## MLP Structure
+
+```text
+Input Layer
+     ↓
+Linear (64)
+     ↓
+ReLU
+     ↓
+Linear (32)
+     ↓
+ReLU
+     ↓
+Linear (1)
+     ↓
+Sigmoid
+```
+
+## Features
+
+- Funnel-shaped architecture
+- Early Stopping
+- Implicit regularization
+- Reproducible pipeline
+- Real-time metric monitoring
+
+---
+
+# ⚙️ 5. Training
+
+During training, the following metrics are tracked:
+
+- Loss
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- Hyperparameters
+- Execution Time
+
+All metrics are automatically integrated into **Weights & Biases**.
+
+---
+
+# 📈 Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+---
+
+# ☁️ Weights & Biases Integration
+
+The project uses **W&B** for:
+
+- Experiment tracking
+- Run comparison
+- Real-time monitoring
+- Metrics storage
+- Model versioning
+- Hyperparameter logging
+
+---
+
+# 🚀 Setup & Execution Guide
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/moiseslopesdasilva708811-ai/MLOps-Salary-Prediction-Dataset.git
+
+cd MLOps-Salary-Prediction-Dataset
+```
+
+---
+
+# 🐍 2️⃣ Create a Virtual Environment
+
+## Windows
+
+```bash
+python -m venv .venv
+
+.venv\Scripts\activate
+```
+
+## Linux/Mac
+
+```bash
+python3 -m venv .venv
+
+source .venv/bin/activate
+```
+
+---
+
+# 📦 3️⃣ Install Dependencies
+
+```bash
+pip install --upgrade pip
+
+pip install -r requirements.txt
+```
+
+---
+
+# 🔐 4️⃣ Authenticate with W&B
+
+```bash
+wandb login
+```
+
+Paste your API Key when prompted.
+
+---
+
+# ▶️ 5️⃣ Run the Project
+
+Open the notebook:
+
+```text
+notebooks/
+```
+
+and execute:
+
+```text
+Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
+```
+
+The pipeline will automatically:
+
+1. Load/download the dataset
+2. Perform statistical cleaning
+3. Encode categorical variables
+4. Apply Feature Selection
+5. Normalize the data
+6. Train the MLP model
+7. Evaluate the model
+8. Send metrics to W&B
+9. Save the trained model
+
+---
+
+# 📊 Results
+
+At the end of training, the project generates:
+
+- Loss Curves
+- Accuracy Curves
+- Confusion Matrix
+- Classification Report
+- Run Comparisons
+- Feature Importance Analysis
+
+All results are available directly in the W&B dashboard.
+
+---
+
+# 🎯 Future Improvements
+
+- FastAPI Deployment
+- Docker Integration
+- CI/CD Pipelines
+- MLflow Integration
+- Kubernetes Deployment
+- DVC (Data Version Control)
+- Hyperparameter Tuning
+- REST API for inference
+
+---
+
+# 🎓 Author
+
+## Moisés Lopes da Silva
+
+Focused on:
+
+- Machine Learning
+- Deep Learning
+- MLOps
+- Software Engineering
+- Artificial Intelligence
+- Electrical Engineering
+
+---
+
+# 📜 License
+
+This project was developed for academic, scientific and educational purposes.
+
+---
+
+<div align="center">
+
+## ⭐ If you found this project useful, consider giving it a star!
+
+</div>
