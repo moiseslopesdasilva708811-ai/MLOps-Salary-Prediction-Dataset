@@ -264,7 +264,7 @@ cd MLOps-Salary-Prediction-Dataset
 ## Windows
 
 ```bash
-python -m venv .venv
+py -m venv .venv
 
 .venv\Scripts\activate
 ```
