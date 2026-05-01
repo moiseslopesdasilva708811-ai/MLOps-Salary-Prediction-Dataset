@@ -259,7 +259,7 @@ cd MLOps-Salary-Prediction-Dataset
 
 ---
 
-# 🐍 2️⃣ Create a Virtual Environment
+# 2️⃣ Create a Virtual Environment
 
 ## Windows
 
