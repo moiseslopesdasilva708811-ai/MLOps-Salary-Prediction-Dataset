@@ -1,4 +1,4 @@
-# 💰 MLOps Pipeline: Adult Census Income Prediction
+# Model Multilayer Perceptron Salary Prediction Classification
 
 This repository presents a complete **Machine Learning + MLOps** solution for income classification using the **Adult Census Income Dataset**.
 
