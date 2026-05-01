@@ -4,6 +4,8 @@ This repository presents a complete **Machine Learning + MLOps** solution for in
 
 The main objective of this project is to predict whether an individual's annual income exceeds **$50K/year** using a **Multilayer Perceptron (MLP)** neural network architecture.
 
+
+<img src="img/Project_Multilayer_Perceptron.png" alt="Diagram MLP" width="600">
 Beyond model training, this project also emphasizes:
 
 - Data Engineering
