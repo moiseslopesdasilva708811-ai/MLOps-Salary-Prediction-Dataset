@@ -1,17 +1,17 @@
-# 💰 Pipeline MLOps: Adult Census Income Prediction
+# 💰 MLOps Pipeline: Adult Census Income Prediction
 
-Este repositório apresenta uma solução completa de **Machine Learning com práticas de MLOps** para classificação de renda utilizando o dataset **Adult Census Income**.
+This repository presents a complete **Machine Learning + MLOps** solution for income classification using the **Adult Census Income Dataset**.
 
-O objetivo do modelo é prever se a renda anual de um indivíduo excede **US$ 50.000**, utilizando uma arquitetura baseada em **Redes Neurais Multilayer Perceptron (MLP)**.
+The main objective of this project is to predict whether an individual's annual income exceeds **$50K/year** using a **Multilayer Perceptron (MLP)** neural network architecture.
 
-Além do treinamento do modelo, o projeto também enfatiza:
+Beyond model training, this project also emphasizes:
 
-- Engenharia de Dados
-- Limpeza Estatística
-- Seleção Inteligente de Atributos
-- Rastreabilidade de Experimentos
-- Versionamento de Modelos
-- Monitoramento em Nuvem com Weights & Biases
+- Data Engineering
+- Statistical Data Cleaning
+- Intelligent Feature Selection
+- Experiment Tracking
+- Model Versioning
+- Cloud Monitoring with Weights & Biases
 
 ---
 
@@ -26,69 +26,69 @@ Além do treinamento do modelo, o projeto também enfatiza:
 
 <br>
 
-### 🚀 Dashboard de Experimentos (W&B)
+### 🚀 Experiments Dashboard (W&B)
 
-[![W&B Dashboard](https://img.shields.io/badge/W&B-Acesse_o_Dashboard-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
+[![W&B Dashboard](https://img.shields.io/badge/W&B-Open_Dashboard-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
 
-*Visualize curvas de loss, accuracy, importance de atributos e métricas em tempo real.*
+*Track loss curves, accuracy, feature importance and experiment metrics in real time.*
 
 </div>
 
 ---
 
-# 📌 Objetivo do Projeto
+# 📌 Project Objective
 
-Este projeto foi desenvolvido com o propósito de aplicar conceitos modernos de:
+This project was developed to apply modern concepts of:
 
-- Ciência de Dados
+- Data Science
 - Machine Learning
 - Deep Learning
-- Engenharia de Machine Learning (MLOps)
+- MLOps Engineering
 
-A proposta é construir um pipeline reproduzível, escalável e monitorável, aproximando o fluxo de desenvolvimento de um ambiente de produção real.
+The goal is to build a reproducible, scalable and production-oriented Machine Learning pipeline.
 
 ---
 
-# 🧠 Tecnologias Utilizadas
+# 🧠 Technologies Used
 
-| Tecnologia | Finalidade |
+| Technology | Purpose |
 |---|---|
-| Python | Linguagem principal |
-| Pandas | Manipulação de dados |
-| NumPy | Operações numéricas |
-| Scikit-Learn | Pré-processamento e métricas |
-| PyTorch | Construção da rede neural |
-| Weights & Biases | Rastreamento de experimentos |
-| Matplotlib | Visualização gráfica |
-| Jupyter Notebook | Desenvolvimento e prototipagem |
+| Python | Main programming language |
+| Pandas | Data manipulation |
+| NumPy | Numerical operations |
+| Scikit-Learn | Preprocessing and evaluation |
+| PyTorch | Neural network implementation |
+| Weights & Biases | Experiment tracking |
+| Matplotlib | Data visualization |
+| Jupyter Notebook | Prototyping and development |
 
 ---
 
-# 🏗️ Arquitetura do Pipeline
+# 🏗️ Pipeline Architecture
 
 ```text
-Coleta de Dados
+Data Collection
         ↓
-Limpeza e Pré-processamento
+Data Cleaning & Preprocessing
         ↓
-Análise Estatística
+Statistical Analysis
         ↓
 Feature Selection
         ↓
-Normalização
+Normalization
         ↓
-Treinamento da Rede Neural
+Neural Network Training
         ↓
-Avaliação
+Evaluation
         ↓
-Monitoramento com W&B
+W&B Monitoring
         ↓
-Versionamento do Modelo
+Model Versioning
 ```
 
 ---
 
-# 📂 Estrutura do Projeto
+# 📂 Project Structure
 
 ```text
 MLOps-Salary-Prediction-Dataset/
@@ -120,96 +120,96 @@ MLOps-Salary-Prediction-Dataset/
 
 ---
 
-# 🔬 Etapas do Pipeline
+# 🔬 Pipeline Stages
 
-## 📥 1. Coleta e Carregamento dos Dados
+## 📥 1. Data Collection
 
-O projeto utiliza o dataset Adult Census Income contendo informações como:
+The project uses the **Adult Census Income Dataset**, containing information such as:
 
-- Idade
-- Escolaridade
-- Estado civil
-- Ocupação
-- Relação familiar
-- Horas trabalhadas
-- Nacionalidade
+- Age
+- Education
+- Marital Status
+- Occupation
+- Work Hours
+- Relationship
+- Native Country
 - Capital Gain/Loss
 
 ---
 
-# 🧹 2. Limpeza e Tratamento dos Dados
+# 🧹 2. Data Cleaning & Preprocessing
 
-Foram aplicadas diversas técnicas de pré-processamento:
+Several preprocessing techniques were applied:
 
-## ✔ Remoção de Duplicatas
+## ✔ Duplicate Removal
 
-Evita viés estatístico causado por amostras repetidas.
+Avoids statistical bias caused by repeated samples.
 
-## ✔ Tratamento de Valores Nulos
+## ✔ Missing Values Treatment
 
-Utilização de:
+Using:
 
-- Mediana para variáveis numéricas
-- Estratégias robustas para dados categóricos
+- Median imputation for numerical variables
+- Robust strategies for categorical data
 
-## ✔ Tratamento de Outliers
+## ✔ Outlier Treatment
 
-Aplicação do método IQR (Interquartile Range).
+Using the **IQR (Interquartile Range)** method.
 
 ---
 
 # 📊 3. Feature Selection
 
-O projeto aplica múltiplas estratégias de seleção de atributos:
+The project applies multiple feature selection strategies:
 
 - Variance Inflation Factor (VIF)
-- Correlação de Spearman
+- Spearman Correlation
 - Mutual Information
 
-Objetivos:
+Main goals:
 
-- Redução do custo computacional
-- Minimização de ruído
-- Redução de multicolinearidade
-- Melhoria da generalização do modelo
+- Reduce computational cost
+- Minimize noise
+- Reduce multicollinearity
+- Improve model generalization
 
 ---
 
-# 🧠 4. Arquitetura da Rede Neural
+# 🧠 4. Neural Network Architecture
 
-A rede neural foi construída utilizando PyTorch.
+The neural network was implemented using **PyTorch**.
 
-## Estrutura da MLP
+## MLP Structure
 
 ```text
-Entrada
-   ↓
+Input Layer
+     ↓
 Linear (64)
-   ↓
+     ↓
 ReLU
-   ↓
+     ↓
 Linear (32)
-   ↓
+     ↓
 ReLU
-   ↓
+     ↓
 Linear (1)
-   ↓
+     ↓
 Sigmoid
 ```
 
-## Características
+## Features
 
-- Arquitetura em funil
+- Funnel-shaped architecture
 - Early Stopping
-- Regularização implícita
-- Pipeline rastreável
-- Monitoramento de métricas em tempo real
+- Implicit regularization
+- Reproducible pipeline
+- Real-time metric monitoring
 
 ---
 
-# ⚙️ 5. Treinamento
+# ⚙️ 5. Training
 
-Durante o treinamento são registrados:
+During training, the following metrics are tracked:
 
 - Loss
 - Accuracy
@@ -217,14 +217,14 @@ Durante o treinamento são registrados:
 - Recall
 - F1-Score
 - Confusion Matrix
-- Hiperparâmetros
-- Tempo de execução
+- Hyperparameters
+- Execution Time
 
-Tudo integrado automaticamente ao Weights & Biases.
+All metrics are automatically integrated into **Weights & Biases**.
 
 ---
 
-# 📈 Métricas Avaliadas
+# 📈 Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -234,22 +234,22 @@ Tudo integrado automaticamente ao Weights & Biases.
 
 ---
 
-# ☁️ Integração com Weights & Biases
+# ☁️ Weights & Biases Integration
 
-O projeto utiliza o W&B para:
+The project uses **W&B** for:
 
-- Rastreamento de experimentos
-- Comparação entre execuções
-- Monitoramento em tempo real
-- Armazenamento de métricas
-- Versionamento de modelos
-- Registro de hiperparâmetros
+- Experiment tracking
+- Run comparison
+- Real-time monitoring
+- Metrics storage
+- Model versioning
+- Hyperparameter logging
 
 ---
 
-# 🚀 Guia de Execução
+# 🚀 Setup & Execution Guide
 
-## 1️⃣ Clonar o Repositório
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/moiseslopesdasilva708811-ai/MLOps-Salary-Prediction-Dataset.git
@@ -259,7 +259,7 @@ cd MLOps-Salary-Prediction-Dataset
 
 ---
 
-# 🐍 2️⃣ Criar Ambiente Virtual
+# 🐍 2️⃣ Create a Virtual Environment
 
 ## Windows
 
@@ -279,7 +279,7 @@ source .venv/bin/activate
 
 ---
 
-# 📦 3️⃣ Instalar Dependências
+# 📦 3️⃣ Install Dependencies
 
 ```bash
 pip install --upgrade pip
@@ -289,95 +289,95 @@ pip install -r requirements.txt
 
 ---
 
-# 🔐 4️⃣ Autenticar no W&B
+# 🔐 4️⃣ Authenticate with W&B
 
 ```bash
 wandb login
 ```
 
-Cole sua API Key quando solicitado.
+Paste your API Key when prompted.
 
 ---
 
-# ▶️ 5️⃣ Executar o Projeto
+# ▶️ 5️⃣ Run the Project
 
-Abra o notebook:
+Open the notebook:
 
 ```text
 notebooks/
 ```
 
-e execute:
+and execute:
 
 ```text
 Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
 ```
 
-O pipeline irá automaticamente:
+The pipeline will automatically:
 
-1. Baixar/carregar os dados
-2. Realizar limpeza estatística
-3. Codificar atributos categóricos
-4. Aplicar Feature Selection
-5. Normalizar os dados
-6. Treinar a MLP
-7. Avaliar o modelo
-8. Registrar métricas no W&B
-9. Salvar o modelo treinado
+1. Load/download the dataset
+2. Perform statistical cleaning
+3. Encode categorical variables
+4. Apply Feature Selection
+5. Normalize the data
+6. Train the MLP model
+7. Evaluate the model
+8. Send metrics to W&B
+9. Save the trained model
 
 ---
 
-# 📊 Resultados
+# 📊 Results
 
-Ao final do treinamento são gerados:
+At the end of training, the project generates:
 
-- Curvas de Loss
-- Curvas de Accuracy
+- Loss Curves
+- Accuracy Curves
 - Confusion Matrix
 - Classification Report
-- Comparação entre runs
-- Importância dos atributos
+- Run Comparisons
+- Feature Importance Analysis
 
-Todos os resultados ficam disponíveis no dashboard do W&B.
+All results are available directly in the W&B dashboard.
 
 ---
 
-# 🎯 Possíveis Melhorias Futuras
+# 🎯 Future Improvements
 
-- Deploy com FastAPI
-- Dockerização do pipeline
-- Integração CI/CD
-- MLflow
-- Kubernetes
-- DVC
+- FastAPI Deployment
+- Docker Integration
+- CI/CD Pipelines
+- MLflow Integration
+- Kubernetes Deployment
+- DVC (Data Version Control)
 - Hyperparameter Tuning
-- API REST para inferência
+- REST API for inference
 
 ---
 
-# 🎓 Autor
+# 🎓 Author
 
 ## Moisés Lopes da Silva
 
-Desenvolvedor focado em:
+Focused on:
 
 - Machine Learning
 - Deep Learning
 - MLOps
-- Engenharia de Software
-- Inteligência Artificial
-- Engenharia Elétrica
+- Software Engineering
+- Artificial Intelligence
+- Electrical Engineering
 
 ---
 
-# 📜 Licença
+# 📜 License
 
-Este projeto foi desenvolvido para fins acadêmicos, científicos e educacionais.
+This project was developed for academic, scientific and educational purposes.
 
 ---
 
 <div align="center">
 
-## ⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
+## ⭐ If you found this project useful, consider giving it a star!
 
 </div>
