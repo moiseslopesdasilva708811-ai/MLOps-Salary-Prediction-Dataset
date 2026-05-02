@@ -407,27 +407,11 @@ All results are available directly in the W&B dashboard.
 
 # 🎓 Author
 
-## Moisés Lopes da Silva
+## Moisés Lopes
 
 Focused on:
 
 - Machine Learning
 - Deep Learning
 - MLOps
-- Software Engineering
 - Artificial Intelligence
-- Electrical Engineering
-
----
-
-# 📜 License
-
-This project was developed for academic, scientific and educational purposes.
-
----
-
-<div align="center">
-
-## ⭐ If you found this project useful, consider giving it a star!
-
-</div>
