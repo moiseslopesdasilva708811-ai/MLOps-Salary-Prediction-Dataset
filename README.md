@@ -401,14 +401,11 @@ All results are available directly in the W&B dashboard.
 
 ---
 
-# 🎯 Future Improvements
+# Future Improvements
 
-- FastAPI Deployment
-- Docker Integration
 - CI/CD Pipelines
 - MLflow Integration
-- Kubernetes Deployment
-- DVC (Data Version Control)
+- Data Version Control
 - Hyperparameter Tuning
 - REST API for inference
 
