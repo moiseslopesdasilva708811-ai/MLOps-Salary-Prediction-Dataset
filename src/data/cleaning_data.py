@@ -1,6 +1,6 @@
 import pandas as pd
 
-def limpar_dados(df):
+def clean_data(df):
     """
     Comando usado para executar o Pipeline ETL descrito no Relatório.
     """

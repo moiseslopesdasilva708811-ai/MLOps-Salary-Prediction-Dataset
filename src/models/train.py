@@ -1,11 +1,14 @@
 import torch
 import wandb
 
-def treinar_modelo(model, train_loader, config):
-    # Inicializa o experimento no W&B para MLOps
+def train_model(model, train_loader, config):
+    """
+    Initializes W&B experiment, trains the model, and logs metrics.
+    """
+    # Initialize W&B experiment for MLOps tracking
     wandb.init(project="salary-prediction", config=config)
     
-    optimizer = torch.optim.Adam(model.parameters(), lr=config['lr'])
+    optimizer = torch.optim.Adam(model.parameters(), lr=config['learning_rate'])
     criterion = torch.nn.BCELoss()
 
     model.train()
@@ -17,11 +20,13 @@ def treinar_modelo(model, train_loader, config):
             loss.backward()
             optimizer.step()
             
-            # Log das métricas para nota de MLOps
+            # Log metrics for MLOps compliance
             wandb.log({"loss": loss.item()})
     
     wandb.finish()
-    print("Treinamento concluído e logado no W&B!")
-    metrics = {"accuracy": 0.85} # Exemplo, use o cálculo real se tiver
+    print("Training complete and logged to W&B!")
+    
+    # Placeholder for actual validation logic
+    metrics = {"accuracy": 0.85} 
     
     return model, metrics

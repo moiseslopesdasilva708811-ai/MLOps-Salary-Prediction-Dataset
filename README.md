@@ -1,4 +1,4 @@
-# Model Multilayer Perceptron Salary Prediction Classification
+# Model Multilayer Perceptron Salary Prediction Classification 
 
 This repository presents a complete **Machine Learning + MLOps** solution for income classification using the **Salary Prediction Classification of Adult Census Income Dataset**.
 
@@ -26,7 +26,7 @@ Beyond model training, this project also emphasizes:
 
 <br>
 
-### 🚀 Experiments Dashboard (W&B)
+### Experiments Dashboard (W&B)
 
 [![W&B Dashboard](https://img.shields.io/badge/W&B-Open_Dashboard-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
 
@@ -34,9 +34,12 @@ Beyond model training, this project also emphasizes:
 
 </div>
 
+
+<img src="notebooks/images/Project_Multilayer_Perceptron.png" alt="Diagram MLP" width="600">
+
 ---
 
-# 📌 Project Objective
+# Project Objective
 
 This project was developed to apply modern concepts of:
 
@@ -49,7 +52,7 @@ The goal is to build a reproducible, scalable and production-oriented Machine Le
 
 ---
 
-# 🧠 Technologies Used
+# Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -64,7 +67,7 @@ The goal is to build a reproducible, scalable and production-oriented Machine Le
 
 ---
 
-# 🏗️ Pipeline Architecture
+# Pipeline Architecture
 
 ```text
 Data Collection
@@ -79,8 +82,6 @@ Normalization
         ↓
 Neural Network Training
         ↓
-Evaluation
-        ↓
 W&B Monitoring
         ↓
 Model Versioning
@@ -88,7 +89,7 @@ Model Versioning
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 MLOps-Salary-Prediction-Dataset/
@@ -120,9 +121,9 @@ MLOps-Salary-Prediction-Dataset/
 
 ---
 
-# 🔬 Pipeline Stages
+# Pipeline Stages
 
-## 📥 1. Data Collection
+## ✔ Data Collection
 
 The project uses the **Adult Census Income Dataset**, containing information such as:
 
@@ -137,7 +138,7 @@ The project uses the **Adult Census Income Dataset**, containing information suc
 
 ---
 
-# 🧹 2. Data Cleaning & Preprocessing
+# ✔ Data Cleaning & Preprocessing
 
 Several preprocessing techniques were applied:
 
@@ -158,7 +159,7 @@ Using the **IQR (Interquartile Range)** method.
 
 ---
 
-# 📊 3. Feature Selection
+# Feature Selection
 
 The project applies multiple feature selection strategies:
 
@@ -175,7 +176,7 @@ Main goals:
 
 ---
 
-# 🧠 4. Neural Network Architecture
+# 🧠 Neural Network Architecture
 
 The neural network was implemented using **PyTorch**.
 
@@ -207,7 +208,7 @@ Sigmoid
 
 ---
 
-# ⚙️ 5. Training
+# Training
 
 During training, the following metrics are tracked:
 
@@ -224,7 +225,7 @@ All metrics are automatically integrated into **Weights & Biases**.
 
 ---
 
-# 📈 Evaluation Metrics
+# Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -234,7 +235,7 @@ All metrics are automatically integrated into **Weights & Biases**.
 
 ---
 
-# ☁️ Weights & Biases Integration
+# Weights & Biases Integration
 
 The project uses **W&B** for:
 
@@ -247,7 +248,7 @@ The project uses **W&B** for:
 
 ---
 
-# 🚀 Setup & Execution Guide
+# Setup & Execution Guide
 
 ## 1️⃣ Clone the Repository
 
@@ -282,7 +283,7 @@ source .venv/bin/activate
 # 📦 3️⃣ Install Dependencies
 
 ```bash
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 
 pip install -r requirements.txt
 ```

@@ -9,4 +9,8 @@ jupyter
 statsmodels
 pytest
 scipy
+<<<<<<< HEAD
 kagglehub
+=======
+kagglehub
+>>>>>>> 8572ab0708cb2b8fe3c9d65dc37c94ed40cf9358

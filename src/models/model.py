@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
 
-class RedeneuralMLP(nn.Module):
+class NeuralNetworkMLP(nn.Module):
     def __init__(self, input_dim):
-        super(RedeneuralMLP, self).__init__()
-        # Arquitetura baseada no seu relatório técnico
+        super(NeuralNetworkMLP, self).__init__()
+        # Architecture ReLU
         self.camadas = nn.Sequential(
             nn.Linear(input_dim, 64),
             nn.ReLU(),

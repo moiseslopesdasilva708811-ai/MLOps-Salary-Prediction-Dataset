@@ -3,7 +3,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import wandb
 
 def evaluate_and_plot(model, X_test, y_test):
-    """Gera matriz de confusão e envia para o WandB."""
+    """Generates a confusion matrix and uploads it to WandB."""
     y_pred = model.predict(X_test)
     cm = confusion_matrix(y_test, y_pred)
     
@@ -11,6 +11,6 @@ def evaluate_and_plot(model, X_test, y_test):
     disp.plot()
     
     plt.title("Matriz de Confusão - Predição Salarial")
-    # Salva o gráfico para o WandB
+    # Save confusion matrix in W&B
     wandb.log({"confusion_matrix": wandb.Image(plt)})
     plt.show()
