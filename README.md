@@ -89,36 +89,63 @@ Model Versioning
 
 ---
 
-# Project Structure
+## Estrutura do Projeto
 
-```text
+```bash
 MLOps-Salary-Prediction-Dataset/
+│── .gitignore
+│── README.md
+│── requirements.txt
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
-│
-├── src/
-│   ├── data/
-│   │   └── preprocessing.py
-│   │
-│   ├── models/
-│   │   └── train.py
-│   │
-│   └── utils/
-│       └── helpers.py
-│
-├── artifacts/
+├── models/
 │   └── mlp_salary_model.pkl
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── notebooks/
+│   │── best_model.pth
+│   │── mlp_salary_model.pkl
+│   │── Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
+│   │── requirements.txt
+│   │
+│   └── images/
+│       ├── confusion_matrix.png
+│       ├── feature_importance_comparison.png
+│       ├── histograms.png
+│       ├── loss_curve.png
+│       ├── Project_Multilayer_Perceptron.png
+│       └── total_green_heatmap.png
+│
+├── src/
+│   │── __init__.py
+│   │
+│   ├── data/
+│   │   ├── cleaning_data.py
+│   │   ├── data_downloading.py
+│   │   ├── preprocessing.py
+│   │   └── __init__.py
+│   │
+│   ├── features/
+│   │   ├── feature_selection.py
+│   │   └── __init__.py
+│   │
+│   ├── models/
+│   │   ├── evaluate.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   └── __init__.py
+│   │
+│   └── utils/
+│       ├── config.py
+│       ├── helpers.py
+│       ├── logger.py
+│       └── __init__.py
+│
+├── tests/
+│   ├── test_data.py
+│   ├── test_model.py
+│   └── test_pipeline.py
+│
+└── wandb/
 ```
-
 ---
 
 # Pipeline Stages
