@@ -25,7 +25,6 @@ Beyond model training, this project also emphasizes:
 ![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=black)
 
 <br>
-
 ### Experiments Dashboard (W&B)
 
 [![W&B Dashboard](https://img.shields.io/badge/W&B-Open_Dashboard-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
@@ -38,6 +37,29 @@ Beyond model training, this project also emphasizes:
 <img src="notebooks/images/Project_Multilayer_Perceptron.png" alt="Diagram MLP" width="600">
 
 ---
+
+### Configuration requirements.txt
+To download the libraries necessary to run the project, it is necessary to run the following instruction inside the notebook in the folder /notebooks/Multilayer_Perceptron_Salary_Prediction_Classification.ipynp
+
+text
+```
+%%writefile requirements.txt
+numpy
+pandas
+scikit-learn
+torch
+matplotlib
+seaborn
+wandb
+scipy
+kagglehub
+jupyter
+statsmodels
+pytest
+scipy
+
+```
+From this point, follow the next instructions in this README to run this Multilayer Perceptron Model
 
 # Project Objective
 
