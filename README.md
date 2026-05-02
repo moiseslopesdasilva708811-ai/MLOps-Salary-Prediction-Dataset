@@ -8,7 +8,7 @@ Beyond model training, this project also emphasizes:
 
 - Data Engineering
 - Statistical Data Cleaning
-- Intelligent Feature Selection
+- Feature Selection
 - Experiment Tracking
 - Model Versioning
 - Cloud Monitoring with Weights & Biases
@@ -25,7 +25,6 @@ Beyond model training, this project also emphasizes:
 ![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=black)
 
 <br>
-
 ### Experiments Dashboard (W&B)
 
 [![W&B Dashboard](https://img.shields.io/badge/W&B-Open_Dashboard-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/MLOps_Salary_Prediction)
@@ -38,6 +37,29 @@ Beyond model training, this project also emphasizes:
 <img src="notebooks/images/Project_Multilayer_Perceptron.png" alt="Diagram MLP" width="600">
 
 ---
+
+### Configuration requirements.txt
+To download the libraries necessary to run the project, it is necessary to run the following instruction inside the notebook in the folder /notebooks/Multilayer_Perceptron_Salary_Prediction_Classification.ipynp
+
+text
+```
+%%writefile requirements.txt
+numpy
+pandas
+scikit-learn
+torch
+matplotlib
+seaborn
+wandb
+scipy
+kagglehub
+jupyter
+statsmodels
+pytest
+scipy
+
+```
+From this point, follow the next instructions in this README to run this Multilayer Perceptron Model
 
 # Project Objective
 
@@ -89,36 +111,63 @@ Model Versioning
 
 ---
 
-# Project Structure
+## Estrutura do Projeto
 
-```text
+```bash
 MLOps-Salary-Prediction-Dataset/
+│── .gitignore
+│── README.md
+│── requirements.txt
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
-│
-├── src/
-│   ├── data/
-│   │   └── preprocessing.py
-│   │
-│   ├── models/
-│   │   └── train.py
-│   │
-│   └── utils/
-│       └── helpers.py
-│
-├── artifacts/
+├── models/
 │   └── mlp_salary_model.pkl
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── notebooks/
+│   │── best_model.pth
+│   │── mlp_salary_model.pkl
+│   │── Multilayer_Perceptron_Salary_Prediction_Classification.ipynb
+│   │── requirements.txt
+│   │
+│   └── images/
+│       ├── confusion_matrix.png
+│       ├── feature_importance_comparison.png
+│       ├── histograms.png
+│       ├── loss_curve.png
+│       ├── Project_Multilayer_Perceptron.png
+│       └── total_green_heatmap.png
+│
+├── src/
+│   │── __init__.py
+│   │
+│   ├── data/
+│   │   ├── cleaning_data.py
+│   │   ├── data_downloading.py
+│   │   ├── preprocessing.py
+│   │   └── __init__.py
+│   │
+│   ├── features/
+│   │   ├── feature_selection.py
+│   │   └── __init__.py
+│   │
+│   ├── models/
+│   │   ├── evaluate.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   └── __init__.py
+│   │
+│   └── utils/
+│       ├── config.py
+│       ├── helpers.py
+│       ├── logger.py
+│       └── __init__.py
+│
+├── tests/
+│   ├── test_data.py
+│   ├── test_model.py
+│   └── test_pipeline.py
+│
+└── wandb/
 ```
-
 ---
 
 # Pipeline Stages
