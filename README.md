@@ -170,6 +170,15 @@ MLOps-Salary-Prediction-Dataset/
 ```
 ---
 
+### Model Multilayer Perceptron Performance
+
+| Metric | Value |
+| :--- | :---: |
+| **Accuracy** | 85.2% |
+| **Precision** | 0.78 |
+| **Recall** | 0.65 |
+| **F1-Score** | 0.71 |
+| **AUC-ROC** | 0.89 |
 # Pipeline Stages
 
 ## ✔ Data Collection
