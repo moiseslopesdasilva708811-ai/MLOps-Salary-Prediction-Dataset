@@ -25,10 +25,9 @@ Beyond model training, this project also emphasizes:
 ![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=black)
 
 <br>
-### 📊 Experiments Dashboard (W&B)
-*Track loss curves, accuracy, feature importance, and experiment metrics in real-time.*
+<h1>Track loss curves, accuracy, feature importance, and experiment metrics in real-time. </h1>
 
-[**Click here to access the Full Training Logs**](https://wandb.ai/moiseslopesdasilva708811-ufrn/salary_prediction_mlops/reports/MLP-Training-Results--VmlldzoxNjc0ODgzMw)
+[![W&B Dashboard](https://img.shields.io/badge/Initial_Experiments-Dashboard-blue?style=for-the-badge&logo=WeightsAndBiases)](https://api.wandb.ai/links/moiseslopesdasilva708811-ufrn/ztrmqhnp)
 [![W&B Dashboard](https://img.shields.io/badge/Initial_Experiments-Dashboard-blue?style=for-the-badge&logo=WeightsAndBiases)](https://api.wandb.ai/links/moiseslopesdasilva708811-ufrn/ztrmqhnp)
 
 </div>
