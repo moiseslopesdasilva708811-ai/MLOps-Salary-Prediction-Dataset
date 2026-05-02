@@ -8,7 +8,7 @@ Beyond model training, this project also emphasizes:
 
 - Data Engineering
 - Statistical Data Cleaning
-- Intelligent Feature Selection
+- Feature Selection
 - Experiment Tracking
 - Model Versioning
 - Cloud Monitoring with Weights & Biases
