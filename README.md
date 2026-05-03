@@ -349,7 +349,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🔐 4️⃣ Authenticate with W&B
+# 4️⃣ Authenticate with W&B
 
 ```bash
 wandb login
@@ -387,7 +387,7 @@ The pipeline will automatically:
 
 ---
 
-# 📊 Results
+# Results
 
 At the end of training, the project generates:
 
