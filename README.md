@@ -27,8 +27,9 @@ Beyond model training, this project also emphasizes:
 <br>
 <h1> Experiments Dashboard (W&B) - Track loss curves, accuracy, feature importance, and experiment metrics in real-time. </h1>
 
-[![W&B Report](https://img.shields.io/badge/MLP--Training--Results-Logs_&_Metrics-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/salary_prediction_mlops/reports/MLP-Training-Results--VmlldzoxNjc0ODgzMw)
 [![W&B Dashboard](https://img.shields.io/badge/Initial_Experiments-Dashboard-blue?style=for-the-badge&logo=WeightsAndBiases)](https://api.wandb.ai/links/moiseslopesdasilva708811-ufrn/ztrmqhnp)
+[![W&B Report](https://img.shields.io/badge/MLP--Training--Results-Logs_&_Metrics-orange?style=for-the-badge&logo=WeightsAndBiases)](https://wandb.ai/moiseslopesdasilva708811-ufrn/salary_prediction_mlops/reports/MLP-Training-Results--VmlldzoxNjc0ODgzMw)
+
 
 
 </div>
