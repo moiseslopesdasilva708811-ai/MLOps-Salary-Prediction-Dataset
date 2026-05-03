@@ -175,7 +175,7 @@ MLOps-Salary-Prediction-Dataset/
 
 | Metric | Value |
 | :--- | :---: |
-| **Accuracy** | 85.2% |
+| **Accuracy** | 82.2% |
 | **Precision** | 0.78 |
 | **Recall** | 0.65 |
 | **F1-Score** | 0.71 |
